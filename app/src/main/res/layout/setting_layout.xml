@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fragment_bg_color">
+    <TableLayout  android:layout_width="fill_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/retailertransparent">
+        <TableRow
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="35dp">
+
+            <TextView
+                android:text="Select A/L Year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:gravity="center|center_vertical"
+                android:textSize="@dimen/headingText"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+    <TableLayout  android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@color/switch_back">
+        <TableRow
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="A/L Year (Test):"
+                android:layout_width="@dimen/IndiSpWithtextWidth"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/normalText"
+                android:layout_marginRight="@dimen/margin_left"
+                android:layout_marginLeft="@dimen/margin_left"/>
+
+            <Spinner
+                android:id="@+id/spinnerAlYears"
+                android:layout_width="@dimen/testIDSpinnerWidth"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_dropdown"/>
+        </TableRow>
+        </TableLayout>
+    <TableLayout  android:layout_width="fill_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/retailertransparent">
+        <TableRow
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="35dp">
+
+            <TextView
+                android:text="Select Test Type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:gravity="center|center_vertical"
+                android:textSize="@dimen/headingText"
+                android:textStyle="bold" />
+            </TableRow>
+    </TableLayout>
+    <TableLayout  android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@color/switch_back">
+
+            <Switch
+                android:id="@+id/all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="ALL" />
+
+            <Switch
+                android:id="@+id/theory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Theory"
+                android:textColor="@color/white"
+                android:layout_below="@+id/all"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentTop="true" />
+            <Switch
+                android:id="@+id/revision"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Revision"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_below="@+id/theory"
+                android:layout_marginTop="10dp" />
+            <Switch
+                android:id="@+id/model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_below="@+id/revision"
+                android:text="Model Paper" />
+    </TableLayout>
+
+    <TableLayout  android:layout_width="fill_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/retailertransparent">
+        <TableRow
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="35dp">
+
+            <TextView
+                android:text="Select Your Center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:gravity="center|center_vertical"
+                android:textSize="@dimen/headingText"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+    <TableLayout  android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@color/switch_back">
+
+    <Switch
+        android:id="@+id/matara"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="Matara" />
+
+    <Switch
+        android:id="@+id/galle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Galle"
+        android:textColor="@color/white"
+        android:layout_below="@+id/matara"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentTop="true" />
+
+        <Switch
+            android:id="@+id/hambantota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Hambantota"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_below="@+id/galle"
+            android:layout_marginTop="10dp" />
+    </TableLayout>
+</LinearLayout>

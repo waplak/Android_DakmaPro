@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_login" >
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/splash" />
+    <TextView
+        android:id="@+id/txtrere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="Loading..."
+        android:textColor="#FFFFFF" />
+
+    <ProgressBar
+        android:id="@+id/progressBar01"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="250dp"
+        android:max="100"
+        android:layout_height="40dp"
+        android:layout_above="@+id/txtrere"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dip" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textSize="9sp"
+        android:id="@+id/footerMark"
+        android:textColor="#0070c0"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:text="Copyright © 2017 Dekma Institute. All Rights Reserved. | Powered by innosoft" />
+
+</RelativeLayout>

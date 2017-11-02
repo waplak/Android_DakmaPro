@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TableLayout  android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_login">
+        <TableRow
+            android:layout_marginTop="2pt"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TableRow>
+        <TableRow
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="A/L Year (Test):"
+                android:layout_width="@dimen/IndiSpWithtextWidth"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/normalText"
+                android:layout_marginRight="@dimen/margin_left"
+                android:layout_marginLeft="@dimen/margin_left"/>
+
+            <Spinner
+                android:id="@+id/spinnerAlYears"
+                android:layout_width="@dimen/testIDSpinnerWidth"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_dropdown"/>
+        </TableRow>
+        <!--<TableRow-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:layout_marginTop="@dimen/margin_top"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<TextView-->
+                <!--android:text="School:"-->
+                <!--android:layout_width="@dimen/IndiSpWithtextWidth"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="@dimen/normalText"-->
+                <!--android:layout_marginRight="@dimen/margin_left"-->
+                <!--android:layout_marginLeft="@dimen/margin_left"/>-->
+
+            <!--<Spinner-->
+                <!--android:id="@+id/school"-->
+                <!--android:layout_width="@dimen/testIDSpinnerWidth"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/btn_dropdown"/>-->
+
+        <!--</TableRow>-->
+        <TableRow
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="School:"
+                android:layout_width="@dimen/IndiSpWithtextWidth"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/normalText"
+                android:layout_marginRight="@dimen/margin_left"
+                android:layout_marginLeft="@dimen/margin_left"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/autschool"
+                android:layout_width="@dimen/testIDSpinnerWidth"
+                android:layout_height="35dp"
+                android:background="@color/white"
+                android:textColor="@android:color/black"
+                android:hint="  Enter School"
+                android:ems="10"/>
+
+        </TableRow>
+    </TableLayout>
+    <TableLayout  android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_login">
+        <TableRow
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text=""
+                android:layout_width="@dimen/IndiSpWithtextWidth"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/boldtext"
+                android:layout_marginRight="@dimen/margin_left"
+                android:layout_marginLeft="@dimen/margin_left"/>
+
+            <Button
+                android:text="View"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/boldtext"
+                android:background="@color/btn_login"
+                android:id="@+id/btView" />
+        </TableRow>
+    </TableLayout>
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

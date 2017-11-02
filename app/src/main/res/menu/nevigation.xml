@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--<item-->
+        <!--android:id="@+id/all"-->
+        <!--android:title="All"-->
+        <!--app:showAsAction="ifRoom"-->
+        <!--app:actionViewClass="android.widget.Switch"-->
+        <!--android:actionLayout="@layout/switch_layout"-->
+        <!--/>-->
+    <!--<item-->
+        <!--android:id="@+id/theory"-->
+        <!--android:title="Theory"-->
+        <!--app:showAsAction="ifRoom"-->
+        <!--app:actionViewClass="android.widget.Switch"-->
+        <!--android:actionLayout="@layout/switch_layout"-->
+        <!--/>-->
+    <!--<item-->
+        <!--android:id="@+id/revision"-->
+        <!--android:title="Revision"-->
+        <!--app:showAsAction="ifRoom"-->
+        <!--app:actionViewClass="android.widget.Switch"-->
+        <!--android:actionLayout="@layout/switch_layout"-->
+        <!--/>-->
+    <!--<item-->
+        <!--android:id="@+id/model"-->
+        <!--android:title="Model Paper"-->
+        <!--app:showAsAction="ifRoom"-->
+        <!--app:actionViewClass="android.widget.Switch"-->
+        <!--android:actionLayout="@layout/switch_layout"-->
+        <!--/>-->
+    <item
+        android:id="@+id/selection"
+        android:title="Send"
+        android:icon="@drawable/list_icon"
+        app:showAsAction="always" />
+</menu>

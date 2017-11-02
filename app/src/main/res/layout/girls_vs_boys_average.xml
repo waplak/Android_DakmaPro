@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TableLayout  android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_login">
+
+        <TableRow
+            android:layout_marginTop="2pt"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Center:"
+                android:layout_width="@dimen/SpWithtextWidth"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/boldtext"
+                android:textStyle="bold"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:layout_marginLeft="@dimen/fab_margin"/>
+            <TextView
+                android:id="@+id/selectedCenter"
+                android:text="Matara"
+                android:layout_width="@dimen/SpWithtextWidth"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/boldtext"
+                android:textStyle="bold"/>
+            <!--<Spinner-->
+            <!--android:id="@+id/spCenter"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/btn_dropdown"/>-->
+        </TableRow>
+    </TableLayout>
+    <TableLayout  android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_login">
+        <TableRow
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="A/L Year (Test):"
+                android:layout_width="@dimen/SpWithtextWidth"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/boldtext"
+                android:layout_margin="@dimen/fab_margin"/>
+
+            <Spinner
+                android:id="@+id/spAlYear"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_dropdown"/>
+        </TableRow>
+    </TableLayout>
+    <TableLayout  android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_login">
+        <TableRow
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text=""
+                android:layout_width="@dimen/SpWithtextWidth"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/boldtext"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginRight="@dimen/fab_margin"/>
+
+
+
+            <Button
+                android:text="View"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/boldtext"
+                android:background="@color/btn_login"
+                android:id="@+id/btView" />
+        </TableRow>
+    </TableLayout>
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

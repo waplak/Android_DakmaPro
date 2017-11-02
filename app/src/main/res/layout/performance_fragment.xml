@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TableLayout  android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_login">
+
+        <TableRow
+            android:layout_marginTop="2pt"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Center:"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/boldtext"
+                android:textStyle="bold"
+                android:layout_marginRight="@dimen/margin_left"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_width="85dp" />
+
+            <TextView
+                android:id="@+id/selectedCenter"
+                android:text="Matara"
+                android:layout_width="@dimen/SpWithtextWidth"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/boldtext"
+                android:textStyle="bold"/>
+        </TableRow>
+    </TableLayout>
+    <TableLayout  android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_login">
+        <TableRow
+            android:gravity="center_vertical"
+            android:layout_marginTop="2pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Test ID:"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/boldtext"
+                android:layout_margin="@dimen/margin_left"
+                android:layout_width="85dp" />
+
+            <Spinner
+                android:id="@+id/spTestID"
+                android:layout_width="@dimen/testIDSpinnerWidth"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_dropdown"/>
+        </TableRow>
+    </TableLayout>
+    <TableLayout  android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_login">
+        <TableRow
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="2pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/boldtext"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_left"
+                android:layout_width="85dp" />
+
+
+
+            <Button
+                android:text="View"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/boldtext"
+                android:background="@color/btn_login"
+                android:id="@+id/btView" />
+
+            <TextView
+                android:id="@+id/avText"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/boldtext"
+                android:text="Average: "
+                android:layout_marginLeft="@dimen/aver_margin_left"
+                android:layout_width="wrap_content" />
+
+            <TextView
+                android:id="@+id/avTextResul"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/boldtext"
+                android:text="75.97"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_left"
+                android:layout_width="85dp" />
+
+        </TableRow>
+    </TableLayout>
+    <TableLayout  android:layout_width="fill_parent"
+        android:id="@+id/serachTable"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="5dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/bg_login">
+        <TableRow
+            android:gravity="center"
+            android:layout_marginTop="2pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/serachName"
+                android:layout_width="@dimen/profSearch"
+                android:layout_height="30dp"
+                android:hint="   Search Name"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textColor="@android:color/black"
+                android:background="@color/white"/>
+        </TableRow>
+    </TableLayout>
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/input_register"
+        android:fillViewport="true"
+        android:layout_gravity="center_horizontal"
+        android:scrollbarFadeDuration="0"
+        android:scrollbarSize="@dimen/margin_5"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="fill_parent" >
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:id="@+id/markTable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="*" >
+                </TableLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
